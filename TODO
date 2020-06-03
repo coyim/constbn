@@ -1,0 +1,5 @@
+implement - encode
+
+create a good wrapper for it all
+for wrapper - convert to and from big.Int (once I have encode() and decode() we can use Int.Bytes() and Int.SetBytes() to deal with conversions
+
