@@ -43,3 +43,17 @@ func (i *Int) Exp(x, y, m *Int) *Int {
 	yb := y.Bytes()
 	return i.ExpB(x, yb, m)
 }
+
+// Set sets the value of the receiver to the argument
+func (i *Int) Set(v *Int) *Int {
+	i.Wipe()
+	i.v = make([]base, len(v.v))
+	copy(i.v, v.v)
+	return i
+}
+
+// Wipe will delete the value inside this Int. It should not
+// be used after this
+func (i *Int) Wipe() {
+	copy(i.v, zeroes(base(len(i.v))))
+}
