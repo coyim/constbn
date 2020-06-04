@@ -7,6 +7,12 @@ package constbn
  * too long then the extra bytes are set to 0.
  */
 
+func simpleEncode(x []base) []byte {
+	result := make([]byte, len(x)*5)
+	encode(result, x)
+	return result
+}
+
 func encode(dst []byte, x []base) {
 	xlen := baseLen(x)
 	if xlen == 0 {

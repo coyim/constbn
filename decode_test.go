@@ -19,7 +19,6 @@ func TestDecode(t *testing.T) {
 
 		if !reflect.DeepEqual(ourm1, test.m1) {
 			t.Errorf("#%d: got %x want %x", i, ourm1, test.m1)
-			return
 		}
 	}
 }

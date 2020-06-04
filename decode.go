@@ -10,7 +10,7 @@ package constbn
  */
 
 func simpleDecode(src []byte) []base {
-	result := make([]base, (len(src)/3)+2)
+	result := make([]base, (len(src)/2)+2)
 	decode(result, src)
 	return result
 }
