@@ -1,5 +1,7 @@
 # constbn - a constant time Golang BigNum library
 
+[![Build Status](https://travis-ci.org/coyim/constbn.svg?branch=master)](https://travis-ci.org/coyim/constbn)
+
 This is an implementation of bignums with a focus on constant time operations. Unless anything else is mentioned, all
 operations are constant time. The initial implementation is based on the i31 implementation from BearSSL. It uses uint32
 values as the limbs, but only 31 bits are actually used.
