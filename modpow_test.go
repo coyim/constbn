@@ -16,7 +16,7 @@ type modpowTestInstance struct {
 }
 
 func TestModpow(t *testing.T) {
-	for i, test := range modpowTestInstances[20:] {
+	for i, test := range modpowTestInstances {
 		ourx := make([]base, len(test.x))
 		copy(ourx, test.x)
 
