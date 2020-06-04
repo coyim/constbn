@@ -16,6 +16,20 @@ to serve the needs of the otr3 project.
 
 - The code in this library assumes that the uint32 multiplication routines are constant time on the machine in question.
 
+
+## Caveats and notes
+
+- This is not a general purpose bignum implementation. It is specifically aimed at cryptography, and specifically
+  cryptography in a constant time setting, with specific limitiations. For example, the Int type does not support
+  negative numbers. It is also not possible to do an exponentiation with an even modulus.
+- The code has not been audited. That said, it is a fairly straightforward translation from a small subset of BearSSL,
+  and I have added a significant amount of test vectors. If something is wrong with this implementation, it's a strong
+  possibility that something is also wrong with the BearSSL implementation.
+- The API is subject to change
+- Currently, there is no good documentation - the code itself is the most appropriate to read to understand what's going on right now.
+- Unless specifically documented, all operations are constant time.
+
+
 ## Authors
 
 - Centro de Autonomía Digital
