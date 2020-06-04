@@ -18,8 +18,14 @@ package constbn
  */
 
 func simpleModpowOpt(x []base, e []byte, m []base) []base {
-	result := make([]base, len(x))
+	l := len(x)
+	if l < len(m) {
+		l = len(m)
+	}
+
+	result := make([]base, l)
 	copy(result, x)
+	result[0] = m[0]
 	m0i := ninv(m[1])
 	tmp := make([]base, 5*baseLenWithHeader(m))
 	_ = modpowOpt(result, e, m, m0i, tmp)

@@ -98,27 +98,25 @@ func TestModpowAgainstBigInt(t *testing.T) {
 		checkRoundtrip(m, t)
 		checkRoundtrip(out, t)
 
+		// We need to ensure that x is already modulo m - our algorithm expects it
 		xx := new(big.Int).Mod(x, m)
 
-		mb := simpleDecode(m.Bytes())
+		xb := new(Int).SetBigInt(xx)
+		yb := new(Int).SetBigInt(y)
+		mb := new(Int).SetBigInt(m)
 
-		// We need to do this since x needs to have the same slice size as m for the algorithm to work
-		xb := make([]base, len(mb))
-		decode(xb, xx.Bytes())
+		res1 := new(Int).ExpB(xb, y.Bytes(), mb)
+		resBig1 := res1.GetBigInt()
 
-		// outb := simpleDecode(out.Bytes())
-		res := simpleModpow(xb, y.Bytes(), mb)
+		res2 := new(Int).Exp(xb, yb, mb)
+		resBig2 := res2.GetBigInt()
 
-		// This comparison will not succeed, because the values will have different bitlens based
-		// on how they were used.
+		if resBig1.Cmp(out) != 0 {
+			t.Errorf("#%d: got %x want %x", i, resBig1, out)
+		}
 
-		// if !reflect.DeepEqual(res, outb) {
-		// 	t.Errorf("#%d: got %x want %x", i, res, outb)
-		// }
-
-		resBig := new(big.Int).SetBytes(simpleEncode(res))
-		if resBig.Cmp(out) != 0 {
-			t.Errorf("#%d: got %x want %x", i, resBig, out)
+		if resBig2.Cmp(out) != 0 {
+			t.Errorf("#%d: got %x want %x", i, resBig2, out)
 		}
 	}
 }
