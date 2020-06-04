@@ -52,7 +52,6 @@ func encode(dst []byte, x []base) {
 					fallthrough
 				case 1:
 					dst[buf-1] = byte(z)
-					break
 				}
 				return
 			}
