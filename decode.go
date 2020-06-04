@@ -9,6 +9,12 @@ package constbn
  * CT: value or length of x does not leak.
  */
 
+func simpleDecode(src []byte) []base {
+	result := make([]base, (len(src)/3)+2)
+	decode(result, src)
+	return result
+}
+
 func decode(x []base, src []byte) {
 	u := len(src)
 	v := 1
@@ -17,7 +23,7 @@ func decode(x []base, src []byte) {
 	for u > 0 {
 		u--
 		b := src[u]
-		acc |= uint(b << accLen)
+		acc |= uint(base(b) << accLen)
 		accLen += 8
 		if accLen >= 31 {
 			x[v] = base(acc) & mask31

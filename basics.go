@@ -12,23 +12,23 @@ func not(ctl base) base {
 
 // mux returns x if ctl is true, y if it's false
 func mux(ctl, x, y base) base {
-	return (x & ctl) | (y &^ ctl)
+	return y ^ (-ctl & (x ^ y))
 }
 
 func eq(x, y base) base {
-	q := x &^ y
+	q := x ^ y
 	return not((q | -q) >> 31)
 }
 
 func neq(x, y base) base {
-	q := x &^ y
+	q := x ^ y
 	return (q | -q) >> 31
 }
 
 // gt returns 1 if x > y, 0 otherwise
 func gt(x, y base) base {
 	z := y - x
-	return (z &^ ((x &^ y) & (x &^ z))) >> 31
+	return (z ^ ((x ^ y) & (x ^ z))) >> 31
 }
 
 func ge(x, y base) base {
@@ -99,6 +99,10 @@ func zeroes(len base) []base {
 	return make([]base, len)
 }
 
+func zeroesBytes(len int) []byte {
+	return make([]byte, len)
+}
+
 /*
  * Zeroize an integer. The announced bit length is set to the provided
  * value, and the corresponding words are set to 0. The ENCODED bit length
@@ -112,4 +116,15 @@ func zeroize(x []base, bitlen base) {
 	copy(x[1:], zeroes(toZero))
 }
 
+func zeroizeBytes(x []byte) {
+	copy(x, zeroesBytes(len(x)))
+}
+
 const mask31 = base(0x7FFFFFFF)
+
+func enc32be(dst []byte, x base) {
+	dst[0] = byte(x >> 24)
+	dst[1] = byte(x >> 16)
+	dst[2] = byte(x >> 8)
+	dst[3] = byte(x)
+}
