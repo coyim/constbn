@@ -39,9 +39,9 @@ func lt(x, y base) base {
 	return gt(y, x)
 }
 
-func le(x, y base) base {
-	return not(gt(x, y))
-}
+// func le(x, y base) base {
+// 	return not(gt(x, y))
+// }
 
 func ccopy(ctl base, dst, src []base, len base) {
 	for i := zero; i < len; i++ {
@@ -78,13 +78,13 @@ func bitLen(x base) base {
 	return k
 }
 
-func min(x, y base) base {
-	return mux(gt(x, y), y, x)
-}
+// func min(x, y base) base {
+// 	return mux(gt(x, y), y, x)
+// }
 
-func max(x, y base) base {
-	return mux(gt(x, y), x, y)
-}
+// func max(x, y base) base {
+// 	return mux(gt(x, y), x, y)
+// }
 
 func mul31(x, y base) uint64 {
 	return uint64(x) * uint64(y)
@@ -92,7 +92,7 @@ func mul31(x, y base) uint64 {
 
 func mul31Lo(x, y base) base {
 	_, lo := bits.Mul32(uint32(x), uint32(y))
-	return base(lo)
+	return base(lo) & mask31
 }
 
 func zeroes(len base) []base {
@@ -127,4 +127,20 @@ func enc32be(dst []byte, x base) {
 	dst[1] = byte(x >> 16)
 	dst[2] = byte(x >> 8)
 	dst[3] = byte(x)
+}
+
+// func byteLen(a []base) base {
+// 	return baseLen(a) << 2
+// }
+
+func baseLen(a []base) base {
+	return (a[0] + 31) >> 5
+}
+
+// func byteLenWithHeader(a []base) base {
+// 	return baseLenWithHeader(a) << 2
+// }
+
+func baseLenWithHeader(a []base) base {
+	return (a[0] + 63) >> 5
 }

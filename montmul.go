@@ -11,7 +11,7 @@ package constbn
  */
 
 func montmul(d, x, y, m []base, m0i base) {
-	len := (m[0] + 31) >> 5
+	len := baseLen(m)
 	len4 := len & ^base(3)
 	zeroize(d, m[0])
 	dh := zero
@@ -19,7 +19,6 @@ func montmul(d, x, y, m []base, m0i base) {
 	for u := zero; u < len; u++ {
 		xu := x[u+1]
 		f := mul31Lo((d[1] + mul31Lo(x[u+1], y[1])), m0i)
-
 		r := uint64(0)
 
 		v := zero

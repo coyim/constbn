@@ -10,7 +10,7 @@ package constbn
 
 func add(a, b []base, ctl base) base {
 	cc := zero
-	m := baseLen(a)
+	m := baseLenWithHeader(a)
 	for u := one; u < m; u++ {
 		aw := a[u]
 		bw := b[u]

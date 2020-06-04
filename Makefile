@@ -33,3 +33,13 @@ lint-ci:
 
 test:
 	$(GOTEST) -cover -v ./...
+
+run-cover:
+	$(GOTEST) -coverprofile=coverage.out -v ./...
+
+coverage: run-cover
+	go tool cover -html=coverage.out
+
+coverage-tails: run-cover
+	go tool cover -html=coverage.out -o ~/Tor\ Browser/coverage.html
+	xdg-open ~/Tor\ Browser/coverage.html
