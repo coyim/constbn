@@ -18,9 +18,11 @@ func simpleModpow(x []base, e []byte, m []base) []base {
 }
 
 func modpow(x []base, e []byte, m []base, m0i base) {
+	modpowInt(x, e, m, m0i, make([]base, len(m)), make([]base, len(m)))
+}
+
+func modpowInt(x []base, e []byte, m []base, m0i base, t1, t2 []base) {
 	elen := len(e)
-	t1 := make([]base, len(m))
-	t2 := make([]base, len(m))
 
 	mlen := baseLenWithHeader(m)
 
