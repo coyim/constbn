@@ -8,8 +8,8 @@ package constbn
  * a[] and b[] MAY be the same array, but partial overlap is not allowed.
  */
 
-func sub(a, b []base, ctl base) base {
-	cc := base(0)
+func sub(a, b []Base, ctl Base) Base {
+	cc := Base(0)
 	m := (a[0] + 63) >> 5
 
 	for u := one; u < m; u++ {

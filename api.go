@@ -4,7 +4,7 @@ import "math/big"
 
 // Int represents an arbitrarily sized integer
 type Int struct {
-	v []base
+	v []Base
 }
 
 // SetBigInt sets the value this int to the value in the big.Int The implementation of decoding bytes is constant time
@@ -54,7 +54,7 @@ func (i *Int) Exp(x, y, m *Int) *Int {
 // This method is constant time in value, but not in length.
 func (i *Int) Set(v *Int) *Int {
 	i.Wipe()
-	i.v = make([]base, len(v.v))
+	i.v = make([]Base, len(v.v))
 	copy(i.v, v.v)
 	return i
 }
@@ -63,5 +63,5 @@ func (i *Int) Set(v *Int) *Int {
 // be used after this
 // This method is constant time in value, but not in length.
 func (i *Int) Wipe() {
-	copy(i.v, zeroes(base(len(i.v))))
+	copy(i.v, zeroes(Base(len(i.v))))
 }

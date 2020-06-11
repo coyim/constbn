@@ -1,21 +1,21 @@
 package constbn
 
-func div(hi, lo, d base) base {
+func div(hi, lo, d Base) Base {
 	q, _ := divrem(hi, lo, d)
 	return q
 }
 
-func rem(hi, lo, d base) base {
+func rem(hi, lo, d Base) Base {
 	_, r := divrem(hi, lo, d)
 	return r
 }
 
-func divrem(hi, lo, d base) (quo, rem base) {
+func divrem(hi, lo, d Base) (quo, rem Base) {
 	q := zero
 	ch := eq(hi, d)
 	hi = mux(ch, zero, hi)
 
-	for k := base(31); k > zero; k-- {
+	for k := Base(31); k > zero; k-- {
 		j := 32 - k
 		w := (hi << j) | (lo >> k)
 		ctl := ge(w, d) | (hi >> k)

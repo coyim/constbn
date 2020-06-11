@@ -7,13 +7,14 @@ package constbn
  * too long then the extra bytes are set to 0.
  */
 
-func simpleEncode(x []base) []byte {
+func simpleEncode(x []Base) []byte {
 	result := make([]byte, len(x)*5)
-	encode(result, x)
+	Encode(result, x)
 	return result
 }
 
-func encode(dst []byte, x []base) {
+// Encode will encode the given number as a big endian unsigned byte array
+func Encode(dst []byte, x []Base) {
 	xlen := baseLen(x)
 	if xlen == 0 {
 		zeroizeBytes(dst)

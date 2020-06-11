@@ -2,6 +2,6 @@
 
 package constbn
 
-func mul31Lo(x, y base) base {
-	return base(x*y) & mask31
+func mul31Lo(x, y Base) Base {
+	return Base(x*y) & mask31
 }

@@ -9,19 +9,20 @@ package constbn
  * integer).
  */
 
-func simpleModpow(x []base, e []byte, m []base) []base {
-	result := make([]base, len(x))
+func simpleModpow(x []Base, e []byte, m []Base) []Base {
+	result := make([]Base, len(x))
 	copy(result, x)
-	m0i := ninv(m[1])
+	m0i := Ninv(m[1])
 	modpow(result, e, m, m0i)
 	return result
 }
 
-func modpow(x []base, e []byte, m []base, m0i base) {
-	modpowInt(x, e, m, m0i, make([]base, len(m)), make([]base, len(m)))
+func modpow(x []Base, e []byte, m []Base, m0i Base) {
+	ModpowInt(x, e, m, m0i, make([]Base, len(m)), make([]Base, len(m)))
 }
 
-func modpowInt(x []base, e []byte, m []base, m0i base, t1, t2 []base) {
+// ModpowInt gives direct access to the internal computation of modular exponentiation
+func ModpowInt(x []Base, e []byte, m []Base, m0i Base, t1, t2 []Base) {
 	elen := len(e)
 
 	mlen := baseLenWithHeader(m)
@@ -30,8 +31,8 @@ func modpowInt(x []base, e []byte, m []base, m0i base, t1, t2 []base) {
 	toMonty(t1, m)
 	zeroize(x, m[0])
 	x[1] = one
-	for k := zero; k < base(elen<<3); k++ {
-		ctl := base((e[elen-1-int(k>>3)] >> (k & 7))) & 1
+	for k := zero; k < Base(elen<<3); k++ {
+		ctl := Base((e[elen-1-int(k>>3)] >> (k & 7))) & 1
 		montmul(t2, x, t1, m, m0i)
 		ccopy(ctl, x, t2, mlen)
 		montmul(t2, t1, t1, m, m0i)

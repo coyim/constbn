@@ -8,7 +8,7 @@ package constbn
  * a[] and b[] MAY be the same array, but partial overlap is not allowed.
  */
 
-func add(a, b []base, ctl base) base {
+func add(a, b []Base, ctl Base) Base {
 	cc := zero
 	m := baseLenWithHeader(a)
 	for u := one; u < m; u++ {

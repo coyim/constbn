@@ -7,17 +7,17 @@ import (
 )
 
 type modpowTestInstance struct {
-	x      []base
+	x      []Base
 	y      []byte
 	blen   int
-	m      []base
-	ninv   base
-	result []base
+	m      []Base
+	ninv   Base
+	result []Base
 }
 
 func TestModpow(t *testing.T) {
 	for i, test := range modpowTestInstances {
-		ourx := make([]base, len(test.x))
+		ourx := make([]Base, len(test.x))
 		copy(ourx, test.x)
 
 		modpow(ourx, test.y[:test.blen], test.m, test.ninv)

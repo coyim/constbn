@@ -17,27 +17,28 @@ package constbn
  * the provided tmp[] array is too short.
  */
 
-func simpleModpowOpt(x []base, e []byte, m []base) []base {
+func simpleModpowOpt(x []Base, e []byte, m []Base) []Base {
 	l := len(x)
 	if l < len(m) {
 		l = len(m)
 	}
 
-	result := make([]base, l)
+	result := make([]Base, l)
 	copy(result, x)
 	result[0] = m[0]
-	m0i := ninv(m[1])
-	tmp := make([]base, 5*baseLenWithHeader(m))
-	_ = modpowOpt(result, e, m, m0i, tmp)
+	m0i := Ninv(m[1])
+	tmp := make([]Base, 5*baseLenWithHeader(m))
+	_ = ModpowOpt(result, e, m, m0i, tmp)
 	return result
 }
 
-func modpowOpt(x []base, e []byte, m []base, m0i base, tmp []base) base {
+// ModpowOpt gives direct access to the internal optimized computation of modular exponentiation
+func ModpowOpt(x []Base, e []byte, m []Base, m0i Base, tmp []Base) Base {
 	mwlen := baseLenWithHeader(m)
 	mlen := mwlen
 	mwlen += mwlen & 1
 
-	twlen := base(len(tmp))
+	twlen := Base(len(tmp))
 	if twlen < (mwlen << 1) {
 		return zero
 	}
@@ -59,7 +60,7 @@ func modpowOpt(x []base, e []byte, m []base, m0i base, tmp []base) base {
 	} else {
 		bs := t2[mwlen:]
 		copy(bs, x[:mlen])
-		for u := base(2); u < one<<winLen; u++ {
+		for u := Base(2); u < one<<winLen; u++ {
 			montmul(bs[mwlen:], bs, x, m, m0i)
 			bs = bs[mwlen:]
 		}
@@ -69,7 +70,7 @@ func modpowOpt(x []base, e []byte, m []base, m0i base, tmp []base) base {
 	x[baseLen(m)] = one
 	muladdSmall(x, zero, m)
 
-	acc := base(0)
+	acc := Base(0)
 	accLen := uint(0)
 	elen := len(e)
 	ep := 0
@@ -78,7 +79,7 @@ func modpowOpt(x []base, e []byte, m []base, m0i base, tmp []base) base {
 		k := winLen
 		if accLen < winLen {
 			if elen > 0 {
-				acc = (acc << 8) | base(e[ep])
+				acc = (acc << 8) | Base(e[ep])
 				ep++
 				elen--
 				accLen += 8

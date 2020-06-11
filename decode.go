@@ -9,13 +9,15 @@ package constbn
  * CT: value or length of x does not leak.
  */
 
-func simpleDecode(src []byte) []base {
-	result := make([]base, (len(src)/2)+2)
-	decode(result, src)
+func simpleDecode(src []byte) []Base {
+	result := make([]Base, (len(src)/2)+2)
+	Decode(result, src)
 	return result
 }
 
-func decode(x []base, src []byte) {
+// Decode will decode the given number from a big endian unsigned byte array. The given result
+// should be an array with sufficient size for the number
+func Decode(x []Base, src []byte) {
 	u := len(src)
 	v := 1
 	acc := uint(0)
@@ -23,17 +25,17 @@ func decode(x []base, src []byte) {
 	for u > 0 {
 		u--
 		b := src[u]
-		acc |= uint(base(b) << accLen)
+		acc |= uint(Base(b) << accLen)
 		accLen += 8
 		if accLen >= 31 {
-			x[v] = base(acc) & mask31
+			x[v] = Base(acc) & mask31
 			v++
 			accLen -= 31
 			acc = uint(b) >> (8 - accLen)
 		}
 	}
 	if accLen != 0 {
-		x[v] = base(acc)
+		x[v] = Base(acc)
 		v++
 	}
 	x[0] = bitLength(x[1:], v-1)

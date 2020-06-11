@@ -13,14 +13,14 @@ package constbn
  * the values of x, z or m.
  */
 
-func muladdSmall(x []base, z base, m []base) {
+func muladdSmall(x []Base, z Base, m []Base) {
 	mBitlen := m[0]
 
 	if mBitlen == zero {
 		return
 	}
 
-	if mBitlen <= base(31) {
+	if mBitlen <= Base(31) {
 		hi := x[1] >> 1
 		lo := (x[1] << 31) | z
 		x[1] = rem(hi, lo, m[1])
@@ -31,7 +31,7 @@ func muladdSmall(x []base, z base, m []base) {
 	mblr := mBitlen & 31
 
 	hi := x[mlen]
-	var a0, a1, b0 base
+	var a0, a1, b0 Base
 	if mblr == zero {
 		a0 = x[mlen]
 		copy(x[2:], x[1:mlen])
@@ -54,8 +54,8 @@ func muladdSmall(x []base, z base, m []base) {
 	for u := one; u <= mlen; u++ {
 		mw := m[u]
 		zl := mul31(mw, q) + uint64(cc)
-		cc = base(zl >> 31)
-		zw := base(zl) & mask31
+		cc = Base(zl >> 31)
+		zw := Base(zl) & mask31
 		xw := x[u]
 		nxw := xw - zw
 		cc += nxw >> 31

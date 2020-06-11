@@ -9,7 +9,7 @@ package constbn
  *
  * CT: value or length of x does not leak.
  */
-func bitLength(x []base, xlen int) base {
+func bitLength(x []Base, xlen int) Base {
 	tw := zero
 	twk := zero
 	for xlen > 0 {
@@ -17,7 +17,7 @@ func bitLength(x []base, xlen int) base {
 		c := eq(tw, zero)
 		w := x[xlen]
 		tw = mux(c, w, tw)
-		twk = mux(c, base(xlen), twk)
+		twk = mux(c, Base(xlen), twk)
 	}
 	return (twk << 5) + bitLen(tw)
 }

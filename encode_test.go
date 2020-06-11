@@ -7,7 +7,7 @@ import (
 
 type encodeTestInstance struct {
 	expected []byte
-	input    []base
+	input    []Base
 	blen     int
 }
 
@@ -15,7 +15,7 @@ func TestEncode(t *testing.T) {
 	for i, test := range encodeTestInstances {
 		ourbm := make([]byte, 128)
 
-		encode(ourbm[:test.blen], test.input)
+		Encode(ourbm[:test.blen], test.input)
 
 		if !reflect.DeepEqual(ourbm, test.expected) {
 			t.Errorf("#%d: got %x want %x", i, ourbm, test.expected)
@@ -26,7 +26,7 @@ func TestEncode(t *testing.T) {
 	for i, test := range decodeTestInstances {
 		ourbm := make([]byte, 128)
 
-		encode(ourbm[:test.blen], test.m1)
+		Encode(ourbm[:test.blen], test.m1)
 
 		if !reflect.DeepEqual(ourbm, test.bm) {
 			t.Errorf("#%d: got %x want %x", i, ourbm, test.bm)

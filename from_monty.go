@@ -8,7 +8,7 @@ package constbn
  * an odd integer).
  */
 
-func fromMonty(x []base, m []base, m0i base) {
+func fromMonty(x []Base, m []Base, m0i Base) {
 	len := baseLen(m)
 
 	for u := zero; u < len; u++ {
@@ -18,10 +18,10 @@ func fromMonty(x []base, m []base, m0i base) {
 			z := uint64(x[v+1]) + mul31(f, m[v+1]) + cc
 			cc = z >> 31
 			if v != 0 {
-				x[v] = base(z) & mask31
+				x[v] = Base(z) & mask31
 			}
 		}
-		x[len] = base(cc)
+		x[len] = Base(cc)
 	}
 
 	sub(x, m, not(sub(x, m, zero)))

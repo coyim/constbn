@@ -10,9 +10,9 @@ package constbn
  * integer).
  */
 
-func montmul(d, x, y, m []base, m0i base) {
+func montmul(d, x, y, m []Base, m0i Base) {
 	len := baseLen(m)
-	len4 := len & ^base(3)
+	len4 := len & ^Base(3)
 	zeroize(d, m[0])
 	dh := zero
 
@@ -25,28 +25,28 @@ func montmul(d, x, y, m []base, m0i base) {
 		for ; v < len4; v += 4 {
 			z := uint64(d[v+1]) + mul31(xu, y[v+1]) + mul31(f, m[v+1]) + r
 			r = z >> 31
-			d[v+0] = base(z) & mask31
+			d[v+0] = Base(z) & mask31
 
 			z = uint64(d[v+2]) + mul31(xu, y[v+2]) + mul31(f, m[v+2]) + r
 			r = z >> 31
-			d[v+1] = base(z) & mask31
+			d[v+1] = Base(z) & mask31
 
 			z = uint64(d[v+3]) + mul31(xu, y[v+3]) + mul31(f, m[v+3]) + r
 			r = z >> 31
-			d[v+2] = base(z) & mask31
+			d[v+2] = Base(z) & mask31
 
 			z = uint64(d[v+4]) + mul31(xu, y[v+4]) + mul31(f, m[v+4]) + r
 			r = z >> 31
-			d[v+3] = base(z) & mask31
+			d[v+3] = Base(z) & mask31
 		}
 
 		for ; v < len; v++ {
 			z := uint64(d[v+1]) + mul31(xu, y[v+1]) + mul31(f, m[v+1]) + r
 			r = z >> 31
-			d[v] = base(z) & mask31
+			d[v] = Base(z) & mask31
 		}
 
-		dh += base(r)
+		dh += Base(r)
 		d[len] = dh & mask31
 		dh >>= 31
 	}
