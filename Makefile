@@ -23,19 +23,19 @@ lint:
 	golint -set_exit_status $(SRC_DIRS)
 
 gosec:
-	gosec ./...
+	gosec .
 
 ineffassign:
 	ineffassign .
 
 lint-ci:
-	golangci-lint run
+	golangci-lint run .
 
 test:
-	$(GOTEST) -cover -v ./...
+	$(GOTEST) -cover -v .
 
 run-cover:
-	$(GOTEST) -coverprofile=coverage.out -v ./...
+	$(GOTEST) -coverprofile=coverage.out -v .
 
 coverage: run-cover
 	go tool cover -html=coverage.out

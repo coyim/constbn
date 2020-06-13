@@ -37,7 +37,7 @@ func (i *Int) Bytes() []byte {
 // in big-endian byte order. x has to be smaller than m.
 // This method is constant time.
 func (i *Int) ExpB(x *Int, y []byte, m *Int) *Int {
-	i.v = simpleModpowOpt(x.v, y, m.v)
+	i.v = simpleModpow(x.v, y, m.v)
 	return i
 }
 

@@ -10,8 +10,15 @@ package constbn
  */
 
 func simpleModpow(x []Base, e []byte, m []Base) []Base {
-	result := make([]Base, len(x))
+	l := len(x)
+	if l < len(m) {
+		l = len(m)
+	}
+
+	result := make([]Base, l)
 	copy(result, x)
+	result[0] = m[0]
+
 	m0i := Ninv(m[1])
 	modpow(result, e, m, m0i)
 	return result
