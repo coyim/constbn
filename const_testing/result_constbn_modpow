@@ -1,77 +1,151 @@
-meas:    0.96 M, max t:   +1.77, max tau: 1.81e-03, (5/tau)^2: 7.64e+06. For the moment, maybe constant time.
-meas:    2.00 M, max t:   +1.67, max tau: 1.18e-03, (5/tau)^2: 1.80e+07. For the moment, maybe constant time.
-meas:    1.14 M, max t:   +1.72, max tau: 1.61e-03, (5/tau)^2: 9.67e+06. For the moment, maybe constant time.
-meas:    1.02 M, max t:   +1.10, max tau: 1.09e-03, (5/tau)^2: 2.12e+07. For the moment, maybe constant time.
-meas:    3.77 M, max t:   +1.65, max tau: 8.48e-04, (5/tau)^2: 3.48e+07. For the moment, maybe constant time.
-meas:    4.47 M, max t:   +1.42, max tau: 6.69e-04, (5/tau)^2: 5.58e+07. For the moment, maybe constant time.
-meas:    6.96 M, max t:   +1.37, max tau: 5.18e-04, (5/tau)^2: 9.30e+07. For the moment, maybe constant time.
-meas:    7.96 M, max t:   +1.52, max tau: 5.37e-04, (5/tau)^2: 8.66e+07. For the moment, maybe constant time.
-meas:    8.96 M, max t:   +1.25, max tau: 4.17e-04, (5/tau)^2: 1.44e+08. For the moment, maybe constant time.
-meas:    9.95 M, max t:   +1.89, max tau: 6.01e-04, (5/tau)^2: 6.92e+07. For the moment, maybe constant time.
-meas:   10.94 M, max t:   +1.47, max tau: 4.44e-04, (5/tau)^2: 1.27e+08. For the moment, maybe constant time.
-meas:   11.94 M, max t:   +2.09, max tau: 6.04e-04, (5/tau)^2: 6.86e+07. For the moment, maybe constant time.
-meas:   12.94 M, max t:   +2.12, max tau: 5.89e-04, (5/tau)^2: 7.21e+07. For the moment, maybe constant time.
-meas:   13.94 M, max t:   +2.36, max tau: 6.31e-04, (5/tau)^2: 6.27e+07. For the moment, maybe constant time.
-meas:   14.93 M, max t:   +2.34, max tau: 6.05e-04, (5/tau)^2: 6.83e+07. For the moment, maybe constant time.
-meas:   15.93 M, max t:   +1.71, max tau: 4.29e-04, (5/tau)^2: 1.36e+08. For the moment, maybe constant time.
-meas:   16.93 M, max t:   +1.23, max tau: 3.00e-04, (5/tau)^2: 2.79e+08. For the moment, maybe constant time.
-meas:   17.92 M, max t:   +1.18, max tau: 2.79e-04, (5/tau)^2: 3.21e+08. For the moment, maybe constant time.
-meas:   18.92 M, max t:   +1.57, max tau: 3.62e-04, (5/tau)^2: 1.91e+08. For the moment, maybe constant time.
-meas:   19.92 M, max t:   +1.57, max tau: 3.51e-04, (5/tau)^2: 2.02e+08. For the moment, maybe constant time.
-meas:   20.93 M, max t:   +1.24, max tau: 2.70e-04, (5/tau)^2: 3.42e+08. For the moment, maybe constant time.
-meas:   21.91 M, max t:   +1.78, max tau: 3.81e-04, (5/tau)^2: 1.72e+08. For the moment, maybe constant time.
-meas:   22.91 M, max t:   +1.69, max tau: 3.53e-04, (5/tau)^2: 2.01e+08. For the moment, maybe constant time.
-meas:   23.92 M, max t:   +1.82, max tau: 3.73e-04, (5/tau)^2: 1.80e+08. For the moment, maybe constant time.
-meas:   24.93 M, max t:   +1.90, max tau: 3.81e-04, (5/tau)^2: 1.72e+08. For the moment, maybe constant time.
-meas:   25.93 M, max t:   +2.46, max tau: 4.84e-04, (5/tau)^2: 1.07e+08. For the moment, maybe constant time.
-meas:   26.93 M, max t:   +2.59, max tau: 4.99e-04, (5/tau)^2: 1.00e+08. For the moment, maybe constant time.
-meas:   27.92 M, max t:   +2.62, max tau: 4.96e-04, (5/tau)^2: 1.02e+08. For the moment, maybe constant time.
-meas:   28.91 M, max t:   +2.40, max tau: 4.47e-04, (5/tau)^2: 1.25e+08. For the moment, maybe constant time.
-meas:   29.92 M, max t:   +2.44, max tau: 4.47e-04, (5/tau)^2: 1.25e+08. For the moment, maybe constant time.
-meas:   30.90 M, max t:   +2.09, max tau: 3.75e-04, (5/tau)^2: 1.77e+08. For the moment, maybe constant time.
-meas:   31.89 M, max t:   +2.00, max tau: 3.54e-04, (5/tau)^2: 2.00e+08. For the moment, maybe constant time.
-meas:   32.89 M, max t:   +2.21, max tau: 3.86e-04, (5/tau)^2: 1.68e+08. For the moment, maybe constant time.
-meas:   33.88 M, max t:   +2.09, max tau: 3.60e-04, (5/tau)^2: 1.93e+08. For the moment, maybe constant time.
-meas:   34.88 M, max t:   +1.99, max tau: 3.38e-04, (5/tau)^2: 2.19e+08. For the moment, maybe constant time.
-meas:   35.88 M, max t:   +2.01, max tau: 3.36e-04, (5/tau)^2: 2.21e+08. For the moment, maybe constant time.
-meas:   19.86 M, max t:   +1.93, max tau: 4.34e-04, (5/tau)^2: 1.33e+08. For the moment, maybe constant time.
-meas:   18.50 M, max t:   +1.76, max tau: 4.10e-04, (5/tau)^2: 1.49e+08. For the moment, maybe constant time.
-meas:   19.00 M, max t:   +1.82, max tau: 4.19e-04, (5/tau)^2: 1.43e+08. For the moment, maybe constant time.
-meas:   19.56 M, max t:   +1.92, max tau: 4.35e-04, (5/tau)^2: 1.32e+08. For the moment, maybe constant time.
-meas:   20.14 M, max t:   +1.99, max tau: 4.44e-04, (5/tau)^2: 1.27e+08. For the moment, maybe constant time.
-meas:   20.72 M, max t:   +2.00, max tau: 4.39e-04, (5/tau)^2: 1.30e+08. For the moment, maybe constant time.
-meas:   21.31 M, max t:   +1.83, max tau: 3.97e-04, (5/tau)^2: 1.58e+08. For the moment, maybe constant time.
-meas:   21.93 M, max t:   +1.86, max tau: 3.98e-04, (5/tau)^2: 1.58e+08. For the moment, maybe constant time.
-meas:   22.58 M, max t:   +1.82, max tau: 3.83e-04, (5/tau)^2: 1.70e+08. For the moment, maybe constant time.
-meas:   23.31 M, max t:   +2.06, max tau: 4.26e-04, (5/tau)^2: 1.37e+08. For the moment, maybe constant time.
-meas:   24.11 M, max t:   +2.20, max tau: 4.47e-04, (5/tau)^2: 1.25e+08. For the moment, maybe constant time.
-meas:   24.95 M, max t:   +2.09, max tau: 4.19e-04, (5/tau)^2: 1.42e+08. For the moment, maybe constant time.
-meas:   25.57 M, max t:   +1.96, max tau: 3.88e-04, (5/tau)^2: 1.66e+08. For the moment, maybe constant time.
-meas:   25.92 M, max t:   +1.89, max tau: 3.72e-04, (5/tau)^2: 1.81e+08. For the moment, maybe constant time.
-meas:   26.24 M, max t:   +1.89, max tau: 3.69e-04, (5/tau)^2: 1.84e+08. For the moment, maybe constant time.
-meas:   26.55 M, max t:   +1.88, max tau: 3.65e-04, (5/tau)^2: 1.87e+08. For the moment, maybe constant time.
-meas:   26.66 M, max t:   +2.00, max tau: 3.87e-04, (5/tau)^2: 1.67e+08. For the moment, maybe constant time.
-meas:   26.74 M, max t:   +2.08, max tau: 4.02e-04, (5/tau)^2: 1.55e+08. For the moment, maybe constant time.
-meas:   26.85 M, max t:   +2.06, max tau: 3.98e-04, (5/tau)^2: 1.57e+08. For the moment, maybe constant time.
-meas:   27.01 M, max t:   +2.12, max tau: 4.08e-04, (5/tau)^2: 1.50e+08. For the moment, maybe constant time.
-meas:   27.32 M, max t:   +1.96, max tau: 3.75e-04, (5/tau)^2: 1.78e+08. For the moment, maybe constant time.
-meas:   27.78 M, max t:   +1.98, max tau: 3.76e-04, (5/tau)^2: 1.77e+08. For the moment, maybe constant time.
-meas:   28.21 M, max t:   +1.78, max tau: 3.35e-04, (5/tau)^2: 2.23e+08. For the moment, maybe constant time.
-meas:   59.98 M, max t:   +1.67, max tau: 2.15e-04, (5/tau)^2: 5.39e+08. For the moment, maybe constant time.
-meas:   60.98 M, max t:   +1.62, max tau: 2.07e-04, (5/tau)^2: 5.83e+08. For the moment, maybe constant time.
-meas:   29.83 M, max t:   +1.52, max tau: 2.78e-04, (5/tau)^2: 3.24e+08. For the moment, maybe constant time.
-meas:   30.40 M, max t:   +1.62, max tau: 2.94e-04, (5/tau)^2: 2.88e+08. For the moment, maybe constant time.
-meas:   30.88 M, max t:   +1.68, max tau: 3.02e-04, (5/tau)^2: 2.73e+08. For the moment, maybe constant time.
-meas:   31.45 M, max t:   +1.57, max tau: 2.80e-04, (5/tau)^2: 3.20e+08. For the moment, maybe constant time.
-meas:   32.07 M, max t:   +1.50, max tau: 2.65e-04, (5/tau)^2: 3.55e+08. For the moment, maybe constant time.
-meas:   32.75 M, max t:   +1.44, max tau: 2.51e-04, (5/tau)^2: 3.97e+08. For the moment, maybe constant time.
-meas:   33.48 M, max t:   +1.67, max tau: 2.89e-04, (5/tau)^2: 3.00e+08. For the moment, maybe constant time.
-meas:   34.27 M, max t:   +1.72, max tau: 2.94e-04, (5/tau)^2: 2.89e+08. For the moment, maybe constant time.
-meas:   35.14 M, max t:   +1.58, max tau: 2.67e-04, (5/tau)^2: 3.51e+08. For the moment, maybe constant time.
-meas:   70.98 M, max t:   +1.43, max tau: 1.70e-04, (5/tau)^2: 8.65e+08. For the moment, maybe constant time.
-meas:   36.89 M, max t:   +1.68, max tau: 2.76e-04, (5/tau)^2: 3.27e+08. For the moment, maybe constant time.
-meas:   73.00 M, max t:   +1.45, max tau: 1.69e-04, (5/tau)^2: 8.72e+08. For the moment, maybe constant time.
-meas:   73.98 M, max t:   +1.40, max tau: 1.63e-04, (5/tau)^2: 9.39e+08. For the moment, maybe constant time.
-meas:   74.98 M, max t:   +1.39, max tau: 1.61e-04, (5/tau)^2: 9.66e+08. For the moment, maybe constant time.
-meas:   75.98 M, max t:   +1.34, max tau: 1.54e-04, (5/tau)^2: 1.06e+09. For the moment, maybe constant time.
-meas:   76.98 M, max t:   +1.36, max tau: 1.55e-04, (5/tau)^2: 1.04e+09. For the moment, maybe constant time.
+0:57:17 meas:    1.00 M, max t:   +2.20, max tau: 2.20e-03, (5/tau)^2: 5.16e+06. For the moment, maybe constant time.
+01:54:27 meas:    2.00 M, max t:   +2.16, max tau: 1.53e-03, (5/tau)^2: 1.07e+07. For the moment, maybe constant time.
+02:51:53 meas:    3.00 M, max t:   +1.31, max tau: 7.56e-04, (5/tau)^2: 4.37e+07. For the moment, maybe constant time.
+03:49:23 meas:    0.84 M, max t:   +1.55, max tau: 1.69e-03, (5/tau)^2: 8.80e+06. For the moment, maybe constant time.
+04:46:32 meas:    1.06 M, max t:   +1.94, max tau: 1.88e-03, (5/tau)^2: 7.10e+06. For the moment, maybe constant time.
+05:43:29 meas:    5.98 M, max t:   +1.89, max tau: 7.74e-04, (5/tau)^2: 4.17e+07. For the moment, maybe constant time.
+06:40:19 meas:    1.73 M, max t:   +2.06, max tau: 1.56e-03, (5/tau)^2: 1.02e+07. For the moment, maybe constant time.
+07:36:24 meas:    2.37 M, max t:   +1.87, max tau: 1.22e-03, (5/tau)^2: 1.69e+07. For the moment, maybe constant time.
+08:32:08 meas:    8.99 M, max t:   +1.81, max tau: 6.03e-04, (5/tau)^2: 6.87e+07. For the moment, maybe constant time.
+09:27:48 meas:    9.98 M, max t:   +1.89, max tau: 5.98e-04, (5/tau)^2: 6.99e+07. For the moment, maybe constant time.
+10:23:25 meas:   10.98 M, max t:   +1.88, max tau: 5.68e-04, (5/tau)^2: 7.75e+07. For the moment, maybe constant time.
+11:18:51 meas:   11.98 M, max t:   +2.15, max tau: 6.22e-04, (5/tau)^2: 6.46e+07. For the moment, maybe constant time.
+12:14:01 meas:   12.98 M, max t:   +2.02, max tau: 5.60e-04, (5/tau)^2: 7.98e+07. For the moment, maybe constant time.
+13:09:10 meas:   13.98 M, max t:   +2.11, max tau: 5.64e-04, (5/tau)^2: 7.87e+07. For the moment, maybe constant time.
+14:04:15 meas:   14.98 M, max t:   +2.35, max tau: 6.07e-04, (5/tau)^2: 6.80e+07. For the moment, maybe constant time.
+14:59:13 meas:   15.98 M, max t:   +2.00, max tau: 5.00e-04, (5/tau)^2: 1.00e+08. For the moment, maybe constant time.
+15:54:07 meas:   16.98 M, max t:   +2.44, max tau: 5.92e-04, (5/tau)^2: 7.13e+07. For the moment, maybe constant time.
+16:48:51 meas:   17.98 M, max t:   +2.30, max tau: 5.43e-04, (5/tau)^2: 8.49e+07. For the moment, maybe constant time.
+17:43:26 meas:   18.97 M, max t:   +2.36, max tau: 5.43e-04, (5/tau)^2: 8.48e+07. For the moment, maybe constant time.
+18:37:56 meas:   19.97 M, max t:   +2.47, max tau: 5.52e-04, (5/tau)^2: 8.20e+07. For the moment, maybe constant time.
+19:31:57 meas:    6.83 M, max t:   +2.27, max tau: 8.70e-04, (5/tau)^2: 3.30e+07. For the moment, maybe constant time.
+20:26:54 meas:   21.97 M, max t:   +1.93, max tau: 4.12e-04, (5/tau)^2: 1.47e+08. For the moment, maybe constant time.
+21:23:05 meas:   22.97 M, max t:   +1.84, max tau: 3.84e-04, (5/tau)^2: 1.70e+08. For the moment, maybe constant time.
+22:21:23 meas:   22.08 M, max t:   +1.65, max tau: 3.52e-04, (5/tau)^2: 2.02e+08. For the moment, maybe constant time.
+23:18:38 meas:   24.95 M, max t:   +2.08, max tau: 4.16e-04, (5/tau)^2: 1.44e+08. For the moment, maybe constant time.
+00:16:04 meas:   23.59 M, max t:   +1.89, max tau: 3.90e-04, (5/tau)^2: 1.65e+08. For the moment, maybe constant time.
+01:13:17 meas:   24.42 M, max t:   +1.76, max tau: 3.55e-04, (5/tau)^2: 1.98e+08. For the moment, maybe constant time.
+02:10:14 meas:   25.36 M, max t:   +1.78, max tau: 3.54e-04, (5/tau)^2: 2.00e+08. For the moment, maybe constant time.
+03:06:52 meas:   26.31 M, max t:   +1.84, max tau: 3.59e-04, (5/tau)^2: 1.94e+08. For the moment, maybe constant time.
+04:03:19 meas:   27.27 M, max t:   +1.82, max tau: 3.48e-04, (5/tau)^2: 2.06e+08. For the moment, maybe constant time.
+04:59:46 meas:   28.19 M, max t:   +1.69, max tau: 3.18e-04, (5/tau)^2: 2.48e+08. For the moment, maybe constant time.
+05:55:52 meas:   29.13 M, max t:   +1.67, max tau: 3.09e-04, (5/tau)^2: 2.62e+08. For the moment, maybe constant time.
+06:52:14 meas:   30.03 M, max t:   +1.45, max tau: 2.64e-04, (5/tau)^2: 3.59e+08. For the moment, maybe constant time.
+07:47:55 meas:   30.99 M, max t:   +1.50, max tau: 2.70e-04, (5/tau)^2: 3.43e+08. For the moment, maybe constant time.
+08:43:22 meas:   31.96 M, max t:   +1.63, max tau: 2.88e-04, (5/tau)^2: 3.01e+08. For the moment, maybe constant time.
+09:38:45 meas:   32.93 M, max t:   +1.67, max tau: 2.91e-04, (5/tau)^2: 2.95e+08. For the moment, maybe constant time.
+10:33:48 meas:   33.90 M, max t:   +1.59, max tau: 2.73e-04, (5/tau)^2: 3.36e+08. For the moment, maybe constant time.
+11:28:39 meas:   34.88 M, max t:   +1.82, max tau: 3.08e-04, (5/tau)^2: 2.64e+08. For the moment, maybe constant time.
+12:23:24 meas:   35.86 M, max t:   +1.80, max tau: 3.01e-04, (5/tau)^2: 2.76e+08. For the moment, maybe constant time.
+13:18:01 meas:   36.84 M, max t:   +1.76, max tau: 2.90e-04, (5/tau)^2: 2.97e+08. For the moment, maybe constant time.
+14:12:36 meas:   37.82 M, max t:   +1.82, max tau: 2.97e-04, (5/tau)^2: 2.84e+08. For the moment, maybe constant time.
+15:07:04 meas:   38.80 M, max t:   +1.65, max tau: 2.64e-04, (5/tau)^2: 3.57e+08. For the moment, maybe constant time.
+16:01:20 meas:   39.78 M, max t:   +1.54, max tau: 2.44e-04, (5/tau)^2: 4.19e+08. For the moment, maybe constant time.
+16:55:32 meas:   40.77 M, max t:   +1.69, max tau: 2.65e-04, (5/tau)^2: 3.57e+08. For the moment, maybe constant time.
+17:49:40 meas:   41.76 M, max t:   +1.62, max tau: 2.51e-04, (5/tau)^2: 3.97e+08. For the moment, maybe constant time.
+18:43:08 meas:   42.75 M, max t:   +1.33, max tau: 2.04e-04, (5/tau)^2: 6.03e+08. For the moment, maybe constant time.
+19:36:20 meas:   43.75 M, max t:   +1.51, max tau: 2.29e-04, (5/tau)^2: 4.77e+08. For the moment, maybe constant time.
+20:30:05 meas:   44.73 M, max t:   +1.33, max tau: 1.98e-04, (5/tau)^2: 6.36e+08. For the moment, maybe constant time.
+21:24:30 meas:   45.71 M, max t:   +1.63, max tau: 2.42e-04, (5/tau)^2: 4.29e+08. For the moment, maybe constant time.
+22:20:24 meas:   46.67 M, max t:   +1.54, max tau: 2.26e-04, (5/tau)^2: 4.89e+08. For the moment, maybe constant time.
+23:17:18 meas:   47.60 M, max t:   +1.45, max tau: 2.09e-04, (5/tau)^2: 5.70e+08. For the moment, maybe constant time.
+00:14:20 meas:   51.94 M, max t:   +1.35, max tau: 1.88e-04, (5/tau)^2: 7.08e+08. For the moment, maybe constant time.
+01:11:53 meas:   49.29 M, max t:   +1.50, max tau: 2.13e-04, (5/tau)^2: 5.50e+08. For the moment, maybe constant time.
+02:09:43 meas:   49.98 M, max t:   +1.46, max tau: 2.06e-04, (5/tau)^2: 5.87e+08. For the moment, maybe constant time.
+03:06:55 meas:   50.81 M, max t:   +1.52, max tau: 2.14e-04, (5/tau)^2: 5.48e+08. For the moment, maybe constant time.
+04:03:50 meas:   51.71 M, max t:   +1.26, max tau: 1.76e-04, (5/tau)^2: 8.09e+08. For the moment, maybe constant time.
+05:00:54 meas:   52.60 M, max t:   +1.37, max tau: 1.89e-04, (5/tau)^2: 7.01e+08. For the moment, maybe constant time.
+05:59:51 meas:   53.36 M, max t:   +1.22, max tau: 1.67e-04, (5/tau)^2: 8.99e+08. For the moment, maybe constant time.
+06:57:29 meas:   54.12 M, max t:   +1.13, max tau: 1.54e-04, (5/tau)^2: 1.05e+09. For the moment, maybe constant time.
+07:53:36 meas:   55.08 M, max t:   +1.17, max tau: 1.57e-04, (5/tau)^2: 1.01e+09. For the moment, maybe constant time.
+08:49:31 meas:   34.14 M, max t:   +0.88, max tau: 1.51e-04, (5/tau)^2: 1.09e+09. For the moment, maybe constant time.
+09:45:17 meas:   34.81 M, max t:   +0.95, max tau: 1.60e-04, (5/tau)^2: 9.73e+08. For the moment, maybe constant time.
+10:40:55 meas:   35.48 M, max t:   +0.89, max tau: 1.50e-04, (5/tau)^2: 1.12e+09. For the moment, maybe constant time.
+11:36:22 meas:   58.94 M, max t:   +0.86, max tau: 1.12e-04, (5/tau)^2: 2.00e+09. For the moment, maybe constant time.
+12:31:41 meas:   59.91 M, max t:   +0.83, max tau: 1.08e-04, (5/tau)^2: 2.15e+09. For the moment, maybe constant time.
+13:26:52 meas:   60.88 M, max t:   +0.92, max tau: 1.18e-04, (5/tau)^2: 1.80e+09. For the moment, maybe constant time.
+14:21:51 meas:   61.86 M, max t:   +0.85, max tau: 1.08e-04, (5/tau)^2: 2.16e+09. For the moment, maybe constant time.
+15:16:41 meas:   62.83 M, max t:   +0.77, max tau: 9.70e-05, (5/tau)^2: 2.66e+09. For the moment, maybe constant time.
+16:11:12 meas:   63.81 M, max t:   +0.70, max tau: 8.70e-05, (5/tau)^2: 3.30e+09. For the moment, maybe constant time.
+17:05:29 meas:   24.22 M, max t:   +0.73, max tau: 1.49e-04, (5/tau)^2: 1.13e+09. For the moment, maybe constant time.
+17:59:40 meas:   65.79 M, max t:   +0.82, max tau: 1.01e-04, (5/tau)^2: 2.47e+09. For the moment, maybe constant time.
+18:53:46 meas:   66.77 M, max t:   +0.96, max tau: 1.17e-04, (5/tau)^2: 1.81e+09. For the moment, maybe constant time.
+19:48:03 meas:   67.75 M, max t:   +0.82, max tau: 9.99e-05, (5/tau)^2: 2.51e+09. For the moment, maybe constant time.
+20:42:14 meas:   68.74 M, max t:   +0.86, max tau: 1.04e-04, (5/tau)^2: 2.33e+09. For the moment, maybe constant time.
+21:36:08 meas:   69.73 M, max t:   +0.84, max tau: 1.01e-04, (5/tau)^2: 2.45e+09. For the moment, maybe constant time.
+22:30:48 meas:   46.65 M, max t:   +0.86, max tau: 1.26e-04, (5/tau)^2: 1.57e+09. For the moment, maybe constant time.
+23:26:34 meas:   47.32 M, max t:   +0.77, max tau: 1.12e-04, (5/tau)^2: 1.98e+09. For the moment, maybe constant time.
+00:23:14 meas:   72.59 M, max t:   +0.74, max tau: 8.65e-05, (5/tau)^2: 3.34e+09. For the moment, maybe constant time.
+01:21:10 meas:   77.61 M, max t:   +0.81, max tau: 9.15e-05, (5/tau)^2: 2.99e+09. For the moment, maybe constant time.
+02:19:25 meas:   48.06 M, max t:   +0.73, max tau: 1.06e-04, (5/tau)^2: 2.23e+09. For the moment, maybe constant time.
+03:16:43 meas:   48.25 M, max t:   +0.74, max tau: 1.06e-04, (5/tau)^2: 2.21e+09. For the moment, maybe constant time.
+04:13:20 meas:   48.57 M, max t:   +0.78, max tau: 1.12e-04, (5/tau)^2: 1.99e+09. For the moment, maybe constant time.
+05:09:33 meas:   49.11 M, max t:   +0.75, max tau: 1.07e-04, (5/tau)^2: 2.20e+09. For the moment, maybe constant time.
+06:06:12 meas:   84.00 M, max t:   +0.79, max tau: 8.65e-05, (5/tau)^2: 3.34e+09. For the moment, maybe constant time.
+07:02:50 meas:   85.00 M, max t:   +0.82, max tau: 8.91e-05, (5/tau)^2: 3.15e+09. For the moment, maybe constant time.
+07:58:31 meas:   86.00 M, max t:   +0.83, max tau: 8.99e-05, (5/tau)^2: 3.10e+09. For the moment, maybe constant time.
+08:53:59 meas:   87.00 M, max t:   +0.84, max tau: 9.05e-05, (5/tau)^2: 3.05e+09. For the moment, maybe constant time.
+09:49:15 meas:   88.00 M, max t:   +0.83, max tau: 8.87e-05, (5/tau)^2: 3.18e+09. For the moment, maybe constant time.
+10:44:15 meas:   89.00 M, max t:   +0.83, max tau: 8.78e-05, (5/tau)^2: 3.24e+09. For the moment, maybe constant time.
+11:39:07 meas:   78.40 M, max t:   +0.89, max tau: 1.01e-04, (5/tau)^2: 2.45e+09. For the moment, maybe constant time.
+12:33:54 meas:   54.73 M, max t:   +0.95, max tau: 1.28e-04, (5/tau)^2: 1.53e+09. For the moment, maybe constant time.
+13:28:34 meas:   55.61 M, max t:   +0.98, max tau: 1.31e-04, (5/tau)^2: 1.46e+09. For the moment, maybe constant time.
+14:23:09 meas:   56.50 M, max t:   +0.86, max tau: 1.15e-04, (5/tau)^2: 1.90e+09. For the moment, maybe constant time.
+15:17:36 meas:   94.00 M, max t:   +0.93, max tau: 9.63e-05, (5/tau)^2: 2.70e+09. For the moment, maybe constant time.
+16:11:57 meas:   95.00 M, max t:   +1.14, max tau: 1.17e-04, (5/tau)^2: 1.82e+09. For the moment, maybe constant time.
+17:06:13 meas:   96.00 M, max t:   +1.15, max tau: 1.18e-04, (5/tau)^2: 1.80e+09. For the moment, maybe constant time.
+18:00:29 meas:   97.00 M, max t:   +1.30, max tau: 1.32e-04, (5/tau)^2: 1.44e+09. For the moment, maybe constant time.
+18:54:00 meas:   98.00 M, max t:   +1.41, max tau: 1.43e-04, (5/tau)^2: 1.23e+09. For the moment, maybe constant time.
+19:47:57 meas:   99.00 M, max t:   +1.42, max tau: 1.43e-04, (5/tau)^2: 1.22e+09. For the moment, maybe constant time.
+20:43:35 meas:  100.00 M, max t:   +1.83, max tau: 1.83e-04, (5/tau)^2: 7.45e+08. For the moment, maybe constant time.
+21:38:42 meas:  101.00 M, max t:   +1.79, max tau: 1.79e-04, (5/tau)^2: 7.84e+08. For the moment, maybe constant time.
+22:34:26 meas:  102.00 M, max t:   +2.00, max tau: 1.98e-04, (5/tau)^2: 6.35e+08. For the moment, maybe constant time.
+23:30:03 meas:  103.00 M, max t:   +2.09, max tau: 2.06e-04, (5/tau)^2: 5.92e+08. For the moment, maybe constant time.
+00:25:54 meas:  104.00 M, max t:   +2.11, max tau: 2.07e-04, (5/tau)^2: 5.86e+08. For the moment, maybe constant time.
+01:22:00 meas:  105.00 M, max t:   +1.98, max tau: 1.93e-04, (5/tau)^2: 6.71e+08. For the moment, maybe constant time.
+02:19:14 meas:  106.00 M, max t:   +1.98, max tau: 1.92e-04, (5/tau)^2: 6.75e+08. For the moment, maybe constant time.
+03:16:30 meas:  107.00 M, max t:   +1.96, max tau: 1.90e-04, (5/tau)^2: 6.93e+08. For the moment, maybe constant time.
+04:13:25 meas:  108.00 M, max t:   +1.91, max tau: 1.83e-04, (5/tau)^2: 7.44e+08. For the moment, maybe constant time.
+05:10:10 meas:  109.00 M, max t:   +1.92, max tau: 1.84e-04, (5/tau)^2: 7.39e+08. For the moment, maybe constant time.
+06:06:20 meas:  110.00 M, max t:   +1.87, max tau: 1.79e-04, (5/tau)^2: 7.83e+08. For the moment, maybe constant time.
+07:01:14 meas:  111.00 M, max t:   +1.78, max tau: 1.69e-04, (5/tau)^2: 8.73e+08. For the moment, maybe constant time.
+07:56:25 meas:  112.00 M, max t:   +1.80, max tau: 1.70e-04, (5/tau)^2: 8.63e+08. For the moment, maybe constant time.
+08:51:32 meas:  113.00 M, max t:   +1.77, max tau: 1.66e-04, (5/tau)^2: 9.06e+08. For the moment, maybe constant time.
+09:46:44 meas:  114.00 M, max t:   +1.80, max tau: 1.68e-04, (5/tau)^2: 8.81e+08. For the moment, maybe constant time.
+10:41:51 meas:  115.00 M, max t:   +1.74, max tau: 1.62e-04, (5/tau)^2: 9.49e+08. For the moment, maybe constant time.
+11:36:48 meas:  116.00 M, max t:   +1.74, max tau: 1.62e-04, (5/tau)^2: 9.58e+08. For the moment, maybe constant time.
+12:31:38 meas:  117.00 M, max t:   +1.72, max tau: 1.59e-04, (5/tau)^2: 9.88e+08. For the moment, maybe constant time.
+13:26:26 meas:  118.00 M, max t:   +1.82, max tau: 1.67e-04, (5/tau)^2: 8.92e+08. For the moment, maybe constant time.
+14:21:11 meas:  119.00 M, max t:   +1.80, max tau: 1.65e-04, (5/tau)^2: 9.18e+08. For the moment, maybe constant time.
+15:15:53 meas:  120.00 M, max t:   +1.81, max tau: 1.65e-04, (5/tau)^2: 9.13e+08. For the moment, maybe constant time.
+16:10:25 meas:  121.00 M, max t:   +1.80, max tau: 1.63e-04, (5/tau)^2: 9.38e+08. For the moment, maybe constant time.
+17:04:50 meas:  122.00 M, max t:   +1.66, max tau: 1.50e-04, (5/tau)^2: 1.11e+09. For the moment, maybe constant time.
+17:59:07 meas:  123.00 M, max t:   +1.74, max tau: 1.56e-04, (5/tau)^2: 1.02e+09. For the moment, maybe constant time.
+18:53:15 meas:  124.00 M, max t:   +1.70, max tau: 1.53e-04, (5/tau)^2: 1.07e+09. For the moment, maybe constant time.
+19:47:27 meas:  125.00 M, max t:   +1.63, max tau: 1.46e-04, (5/tau)^2: 1.18e+09. For the moment, maybe constant time.
+20:41:52 meas:  126.00 M, max t:   +1.65, max tau: 1.47e-04, (5/tau)^2: 1.15e+09. For the moment, maybe constant time.
+21:36:17 meas:  127.00 M, max t:   +1.58, max tau: 1.40e-04, (5/tau)^2: 1.28e+09. For the moment, maybe constant time.
+22:30:52 meas:  128.00 M, max t:   +1.55, max tau: 1.37e-04, (5/tau)^2: 1.32e+09. For the moment, maybe constant time.
+23:25:55 meas:  129.00 M, max t:   +1.52, max tau: 1.34e-04, (5/tau)^2: 1.39e+09. For the moment, maybe constant time.
+00:21:21 meas:  130.00 M, max t:   +1.50, max tau: 1.32e-04, (5/tau)^2: 1.44e+09. For the moment, maybe constant time.
+01:16:58 meas:  131.00 M, max t:   +1.48, max tau: 1.29e-04, (5/tau)^2: 1.50e+09. For the moment, maybe constant time.
+02:12:44 meas:  132.00 M, max t:   +1.52, max tau: 1.33e-04, (5/tau)^2: 1.42e+09. For the moment, maybe constant time.
+03:08:36 meas:  133.00 M, max t:   +1.60, max tau: 1.39e-04, (5/tau)^2: 1.30e+09. For the moment, maybe constant time.
+04:04:43 meas:  134.00 M, max t:   +1.57, max tau: 1.36e-04, (5/tau)^2: 1.35e+09. For the moment, maybe constant time.
+05:00:45 meas:  135.00 M, max t:   +1.62, max tau: 1.39e-04, (5/tau)^2: 1.29e+09. For the moment, maybe constant time.
+05:56:02 meas:  136.00 M, max t:   +1.72, max tau: 1.47e-04, (5/tau)^2: 1.15e+09. For the moment, maybe constant time.
+06:50:22 meas:  137.00 M, max t:   +1.73, max tau: 1.48e-04, (5/tau)^2: 1.14e+09. For the moment, maybe constant time.
+07:44:22 meas:  138.00 M, max t:   +1.67, max tau: 1.42e-04, (5/tau)^2: 1.24e+09. For the moment, maybe constant time.
+08:38:04 meas:  139.00 M, max t:   +1.59, max tau: 1.35e-04, (5/tau)^2: 1.38e+09. For the moment, maybe constant time.
+09:31:41 meas:  140.00 M, max t:   +1.63, max tau: 1.38e-04, (5/tau)^2: 1.32e+09. For the moment, maybe constant time.
+10:25:48 meas:  141.00 M, max t:   +1.79, max tau: 1.51e-04, (5/tau)^2: 1.10e+09. For the moment, maybe constant time.
+11:20:04 meas:  142.00 M, max t:   +1.84, max tau: 1.54e-04, (5/tau)^2: 1.05e+09. For the moment, maybe constant time.
+12:14:23 meas:  143.00 M, max t:   +1.83, max tau: 1.53e-04, (5/tau)^2: 1.07e+09. For the moment, maybe constant time.
+13:08:43 meas:  144.00 M, max t:   +1.82, max tau: 1.51e-04, (5/tau)^2: 1.09e+09. For the moment, maybe constant time.
+14:03:03 meas:  145.00 M, max t:   +1.74, max tau: 1.45e-04, (5/tau)^2: 1.19e+09. For the moment, maybe constant time.
+14:57:20 meas:  146.00 M, max t:   +1.82, max tau: 1.50e-04, (5/tau)^2: 1.11e+09. For the moment, maybe constant time.
+15:51:35 meas:  147.00 M, max t:   +1.87, max tau: 1.54e-04, (5/tau)^2: 1.05e+09. For the moment, maybe constant time.
+16:45:46 meas:  148.00 M, max t:   +1.96, max tau: 1.61e-04, (5/tau)^2: 9.64e+08. For the moment, maybe constant time.
+17:39:52 meas:  149.00 M, max t:   +1.85, max tau: 1.52e-04, (5/tau)^2: 1.09e+09. For the moment, maybe constant time.
+18:33:54 meas:  150.00 M, max t:   +1.89, max tau: 1.55e-04, (5/tau)^2: 1.05e+09. For the moment, maybe constant time.
+19:28:18 meas:  151.00 M, max t:   +1.88, max tau: 1.53e-04, (5/tau)^2: 1.06e+09. For the moment, maybe constant time.

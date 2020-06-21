@@ -15,7 +15,9 @@ to serve the needs of the otr3 project.
 ## Security and assumptions
 
 - The code in this library assumes that the uint32 multiplication routines are constant time on the machine in question.
-
+- The constant time nature of the modpow (Exp) implementation has been tested using `dudect`. You can see the code and
+  the results from this testing in the `const_testing` sub directory in this repository. The summary is that this
+  specific tests gives a good inidication that the code is actually constant time.
 
 ## Caveats and notes
 

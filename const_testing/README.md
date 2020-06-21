@@ -18,8 +18,8 @@ start trying to disprope the constant time nature of the `constbn` code.
 ## Results
 
 The two files `result_constbn_modpow` and `result_constbn_modpow_opt` contain the output of running the above commands
-for roughly 96 hours. The important part is the `max t` value, which should never go over 10. As you can see, for the 96
-hours, thse values almost always hover between 1 and 2, which is a very good indiciation that these implementations are
+for roughly 7 days. The important part is the `max t` value, which should never go over 10. As you can see, for the 96
+hours, these values almost always hover between 1 and 2, which is a very good indiciation that these implementations are
 in fact constant time.
 
 
