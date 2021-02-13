@@ -11,6 +11,7 @@ SRC_ALL := $(foreach sdir,$(SRC_DIRS),$(wildcard $(sdir)/*.go))
 SRC := $(filter-out $(SRC_TEST), $(SRC_ALL))
 
 GO := go
+GOGET := $(GO) get
 GOBUILD := $(GO) build
 GOTEST := $(GO) test
 
@@ -43,3 +44,9 @@ coverage: run-cover
 coverage-tails: run-cover
 	go tool cover -html=coverage.out -o ~/Tor\ Browser/coverage.html
 	xdg-open ~/Tor\ Browser/coverage.html
+
+deps-ci:
+	$(GOGET) -u github.com/mattn/goveralls
+
+coveralls: run-cover
+	goveralls -coverprofile=coverage.out
