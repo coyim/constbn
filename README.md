@@ -1,6 +1,7 @@
 # constbn - a constant time Golang BigNum library
 
-[![Build Status](https://travis-ci.org/coyim/constbn.svg?branch=master)](https://travis-ci.org/coyim/constbn)
+[![Build Status](https://github.com/coyim/constbn/workflows/constbn%20CI/badge.svg)](https://github.com/coyim/constbn/actions?query=workflow%3A%22constbn+CI%22)
+[![Coverage Status](https://coveralls.io/repos/coyim/constbn/badge.svg?branch=main&service=github)](https://coveralls.io/github/coyim/constbn?branch=main)
 
 This is an implementation of bignums with a focus on constant time operations. Unless anything else is mentioned, all
 operations are constant time. The initial implementation is based on the i31 implementation from BearSSL. It uses uint32
@@ -11,6 +12,9 @@ operation on bignums large enough to implement modern cryptographyic algorithms,
 constant time. Other operations might be added with time, making this a more generic library, but the focus is initially
 to serve the needs of the otr3 project.
 
+## API Documentation
+
+[![GoDoc](https://godoc.org/github.com/coyim/constbn?status.svg)](https://godoc.org/github.com/coyim/constbn)
 
 ## Security and assumptions
 
