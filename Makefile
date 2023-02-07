@@ -12,6 +12,7 @@ SRC := $(filter-out $(SRC_TEST), $(SRC_ALL))
 
 GO := go
 GOGET := $(GO) get
+GOINSTALL := $(GO) install
 GOBUILD := $(GO) build
 GOTEST := $(GO) test
 
@@ -46,7 +47,8 @@ coverage-tails: run-cover
 	xdg-open ~/Tor\ Browser/coverage.html
 
 deps-ci:
-	$(GOGET) -u github.com/mattn/goveralls
+	$(GOINSTALL) github.com/mattn/goveralls
+	$(GOINSTALL) golang.org/x/lint/golint
 
 coveralls: run-cover
 	goveralls -coverprofile=coverage.out
